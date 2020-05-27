@@ -11,7 +11,15 @@ import xlrd
 # import xlwt
 from xpinyin import Pinyin
 from openpyxl import load_workbook
-
+'''
+读一个单元格数据的方法：
+fromfile = './2.xlsx'
+data= xlrd.open_workbook(fromfile) 
+table = data.sheets()[0] #第一张表
+nrows = table.nrows
+print(nrows)
+print(table.row(0)[0].value)  # 第一行第一列
+'''
 if __name__ == '__main__':
 
     department_No = 1
